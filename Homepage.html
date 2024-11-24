@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="menu-container">
+        <header class="header">
+            <button class="burger-menu" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu">
+                <button>Профиль</button>
+                <button>Расписание</button>
+                <button class="active">Главная</button>
+                <button>Успеваемость</button>
+                <button>Настройки</button>
+            </nav>
+        </header>
+    </div>
+    <div class="container">
+        <div class="week-selector-container">
+            <div class="week-selector">
+                <button class="arrow">
+                    <img src="images/arrow.png" alt="Предыдущая неделя">
+                </button>
+                <button class="arrow">
+                    <img src="images/arrow-right.png" alt="Следующая неделя">
+                </button>
+                <span class="date-range">7-13 сентября 2024 год</span>
+                
+            </div>
+            <div class="week-selector-buttons">
+                <button class="current-week">Текущая неделя</button>
+                <button class="calendar">
+                    <img src="images/Raspisaniye.png" alt="Календарь">
+                </button>
+            </div>
+        </div>
+        <div class="schedule-container">
+            <main class="main-content">
+                <div class="schedule-wrapper">
+                    <div class="schedule">
+                        <h3>Понедельник 7 сентября</h3>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Задание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Рус.яз</td>
+                                    <td>4</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Литература</td>
+                                    <td>3</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Англ.яз</td>
+                                    <td>—</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ничего</td>
+                                    <td>—</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="schedule">
+                        <h3>Вторник 8 сентября</h3>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Задание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Рус.яз</td>
+                                    <td>4</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Литература</td>
+                                    <td>3</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Англ.яз</td>
+                                    <td>—</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ничего</td>
+                                    <td>—</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="schedule">
+                        <h3>Среда 9 сентября</h3>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Задание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Рус.яз</td>
+                                    <td>4</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Литература</td>
+                                    <td>3</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Англ.яз</td>
+                                    <td>—</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ничего</td>
+                                    <td>—</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="schedule">
+                        <h3>Четверг 10 сентября</h3>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Задание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Рус.яз</td>
+                                    <td>4</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Литература</td>
+                                    <td>3</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Англ.яз</td>
+                                    <td>—</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ничего</td>
+                                    <td>—</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="schedule">
+                        <h3>Пятница 11 сентября</h3>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Задание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Рус.яз</td>
+                                    <td>4</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Литература</td>
+                                    <td>3</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Англ.яз</td>
+                                    <td>—</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ничего</td>
+                                    <td>—</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="schedule">
+                        <h3>Суббота 12 сентября</h3>
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>№</th>
+                                    <th>Предмет</th>
+                                    <th>Оценка</th>
+                                    <th>Задание</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Математика</td>
+                                    <td>5</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Рус.яз</td>
+                                    <td>4</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Литература</td>
+                                    <td>3</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Англ.яз</td>
+                                    <td>—</td>
+                                    <td>Задание</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Ничего</td>
+                                    <td>—</td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="Copyright-container">
+        <div class="Copyright">
+            <h3>© Дневник, 2024</h3>
+        </div>
+    </div>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            document.querySelector('.burger-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>

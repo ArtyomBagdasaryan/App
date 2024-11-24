@@ -1,0 +1,370 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-image: url('../images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Top Menu Section */
+.menu-container {
+    width: auto;
+    max-width: 1200px;
+    margin-top: 20px;
+    background-color: #659699;
+    border-radius: 15px;
+    
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav button {
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    padding: 17px 35px;
+    transition: background-color ease;
+}
+
+nav button:hover, .active {
+    background-color: #3A5658;
+    border-radius: 15px;
+}
+
+.week-selector-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Расположить блок слева */
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-weight: bold;
+    width: auto;
+    max-width: 400px;
+    margin: 20px 0; /* Только отступ сверху и снизу */
+}
+
+.week-selector {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Расстояние между стрелками и датой */
+}
+
+.week-selector .arrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.week-selector .arrow img {
+    width: 15px;
+    height: 15px;
+}
+
+.week-selector .date-range {
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    white-space: nowrap;
+}
+
+.week-selector-buttons {
+    padding-left: 70px;
+    display: flex;
+    gap: 10px; /* Расстояние между кнопками */
+    margin-top: 10px; 
+}
+
+.week-selector-buttons button {
+    background-color: #CFCFCF; /* Цвет фона кнопок */
+    border: none; /* Рамка кнопок */
+    padding: 5px 10px; /* Внутренние отступы кнопок */
+    cursor: pointer; /* Указатель мыши на кнопках */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавный переход */
+}
+
+.week-selector-buttons button:hover {
+    background-color: #9c9c9c; /* Затемнённый фон при наведении */
+    transform: scale(1.05); /* Лёгкое увеличение кнопки */
+}
+
+
+.current-week {
+    background-color: #CFCFCF;
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+
+.calendar {
+    background-color: #CFCFCF;
+    border-radius: 8px;
+    padding: 3px 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.calendar img {
+    width: 20px;
+    height: 20px;
+}
+
+.schedule-container {
+    flex: 1;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    background-color: rgba(101, 150, 153, 0.52);
+    border-radius: 15px;
+}
+.schedule-wrapper {
+    display: flex;
+    gap: 20px; /* Расстояние между таблицами */
+    flex-wrap: wrap; /* Для адаптации на малых экранах */
+    justify-content: space-between;
+}
+
+/* Каждая таблица */
+.schedule {
+    width: 48%; /* Половина блока (с учетом gap) */
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.schedule h3 {
+    font-weight: bold;
+    text-align: center; /* Название таблицы слева */
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: rgba(82, 137, 142, 0.3); /* Прозрачный фон */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.schedule-table th, 
+.schedule-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Разделительные линии */
+    font-weight: bold; /* Жирный шрифт */
+    color: #fff;
+}
+
+.schedule-table th {
+    
+    background: rgba(62, 101, 105, 0.3);
+    text-align: left;
+}
+
+.schedule-table tr:last-child td {
+    border-bottom: none;
+}
+
+.schedule-table td:first-child {
+    text-align: center;
+    width: 50px;
+}
+
+.day {
+    background: rgba(82, 137, 142, 0.3);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+.day h3 {
+    margin-bottom: 10px;
+}
+
+.subject {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #aecdcf;
+    border-radius: 15px;
+    color: #2e4c50;
+}
+
+.subject-name {
+    font-weight: bold;
+}
+
+.subject-tasks {
+    font-size: 0.9em;
+    color: #2e4c50;
+}
+
+.Copyright-container{
+    width: 100%;
+    margin-top: 20px;
+    background-color: rgb(47, 47, 47);
+    
+}
+
+.Copyright {
+    color: rgb(139, 139, 139);
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Мобильное меню */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 15px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    z-index: 1000;
+}
+
+.burger-menu span {
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+    .burger-menu {
+        display: flex;
+    }
+
+    .nav-menu {
+        display: none;
+        width: auto;
+        min-width: 200px;
+        flex-direction: column;
+        position: fixed;
+        top: 70px;
+        left: 15px;
+        background-color: #659699;
+        padding: 10px;
+        z-index: 999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        animation: slideDown 0.3s ease;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu button {
+        width: 100%;
+        text-align: left;
+        padding: 12px 15px;
+        margin: 2px 0;
+        border-radius: 5px;
+        transition: background-color 0.2s ease;
+    }
+
+    .nav-menu button:hover {
+        background-color: #3A5658;
+    }
+
+    .header {
+        position: relative;
+    }
+
+    .schedule {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .week-selector-container {
+        width: 100%;
+        max-width: none;
+        margin-top: 60px;
+    }
+
+    .week-selector-buttons {
+        padding-left: 0;
+        justify-content: center;
+    }
+}
+
+/* Анимация для бургер-меню */
+.burger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
